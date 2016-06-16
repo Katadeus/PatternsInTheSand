@@ -15,11 +15,11 @@ def draw():
         x = sin(a)*d*mx+320
         y = cos(a)*d*my+320
         points.append([x,y,a,400])
-        stroke(255,255,255)
+        stroke(255,255,255,255)
         for i in range(0,len(points)):
             if points[i][3] > 0:
-                #fill(points[i][0]/2,points[i][1]/2,points[i][2])
-                #stroke(points[i][0]/2,points[i][1]/2,points[i][2])
+                #fill(points[i][0]/2,points[i][1]/2,points[i][2],255)
+                #stroke(points[i][0]/2,points[i][1]/2,points[i][2],255)
                 ellipse(points[i][0],points[i][1],1,1)
                 d = math.sqrt(math.pow(x-320,2)+math.pow(y-320,2))
                 points[i] = [points[i][0]+sin(points[i][2])*(200-d)*1,points[i][1]+cos(points[i][2])*(200-d)*1,points[i][2],points[i][3]-1]
