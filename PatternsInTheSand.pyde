@@ -18,7 +18,7 @@ def draw():
         stroke(255,255,255)
         for i in range(0,len(points)):
             if points[i][3] > 0:
-                fill(points[i][0]/2,points[i][1]/2,points[i][2])
+                #fill(points[i][0]/2,points[i][1]/2,points[i][2])
                 #stroke(points[i][0]/2,points[i][1]/2,points[i][2])
                 ellipse(points[i][0],points[i][1],1,1)
                 d = math.sqrt(math.pow(x-320,2)+math.pow(y-320,2))
