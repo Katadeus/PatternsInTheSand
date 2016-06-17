@@ -11,9 +11,8 @@ def draw():
     global clicked
     if clicked:
         a = random(360)
-        d = math.sqrt(1)
-        x = sin(a)*d*mx+320
-        y = cos(a)*d*my+320
+        x = sin(a)*mx+320
+        y = cos(a)*my+320
         points.append([x,y,a,400])
         stroke(255,255,255,255)
         for i in range(0,len(points)):
